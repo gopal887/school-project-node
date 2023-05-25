@@ -1,5 +1,5 @@
 pipeline{
-    agent any
+    agent {label 'SCHOOL-T'}
     stages{
         stage('continuous-download'){
             steps{
