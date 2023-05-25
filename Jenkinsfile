@@ -4,6 +4,7 @@ pipeline{
         stage('continuous-download'){
             steps{
                 git 'https://github.com/balla26/school-project-node.git'
+                branch 'main'
             }
         }
         stage('continuous-build'){
